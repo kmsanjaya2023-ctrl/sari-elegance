@@ -13,17 +13,17 @@ import Providers from "@/components/Providers";
 // around), you can swap this back in — see README.md for instructions.
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.sarielegance-placeholder.com"),
+  metadataBase: new URL("https://sari-elegance.vercel.app"),
   title: {
-    default: "Sari Elegance | Premium Handwoven Sarees, Sri Lanka",
-    template: "%s | Sari Elegance",
+    default: "Wudi Online | Handmade Sarees, Sri Lanka",
+    template: "%s | Wudi Online",
   },
   description:
-    "Discover handwoven silk, bridal, party wear and cotton sarees crafted with timeless elegance. Shop Sri Lanka's premium saree destination — free island-wide delivery on orders over LKR 15,000.",
-  keywords: ["sarees", "silk saree", "bridal saree", "Sri Lanka saree shop", "cotton saree", "buy saree online"],
+    "Discover beautiful handmade sarees with unique hand-painted and printed designs. Shop Wudi Online for quality, affordable sarees delivered island-wide in Sri Lanka.",
+  keywords: ["sarees", "handmade saree", "Sri Lanka saree shop", "Wudi Online", "buy saree online"],
   openGraph: {
-    title: "Sari Elegance | Premium Handwoven Sarees",
-    description: "Elegance woven in every thread. Shop our curated saree collection.",
+    title: "Wudi Online | Handmade Sarees",
+    description: "Beautiful handmade sarees, crafted with care. Shop our collection.",
     type: "website",
   },
 };
