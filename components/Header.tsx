@@ -59,7 +59,7 @@ export default function Header() {
           href="/"
           className="font-display text-2xl tracking-wide text-burgundy sm:text-3xl"
         >
-          Sari <span className="text-gold">Elegance</span>
+         Wudi <span className="text-gold">Online</span>
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Main navigation">
