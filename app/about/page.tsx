@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Sari Elegance — our craft, our weavers, and our commitment to timeless quality.",
+  description: "Learn about Wudi Online — our story, our craft, and our commitment to timeless quality sarees.",
 };
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
         <div className="relative aspect-[16/7] w-full overflow-hidden">
           <Image
             src="https://picsum.photos/seed/aboutHero/1600/700"
-            alt="Weaving workshop"
+            alt="Wudi Online saree collection"
             fill
             priority
             sizes="100vw"
@@ -22,7 +22,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-charcoal/50" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-cream">
             <span className="eyebrow text-gold-light">Our Journey</span>
-            <h1 className="mt-3 font-display text-4xl sm:text-5xl">About Sari Elegance</h1>
+            <h1 className="mt-3 font-display text-4xl sm:text-5xl">About Wudi Online</h1>
           </div>
         </div>
       </section>
@@ -30,24 +30,30 @@ export default function AboutPage() {
       <section className="container-elegant py-16">
         <div className="mx-auto max-w-3xl space-y-6 text-center leading-relaxed text-charcoal/70">
           <p>
-            Sari Elegance was founded with a simple belief: that traditional
-            craftsmanship deserves a place in the modern wardrobe.
-            <span className="text-charcoal/40"> (Placeholder business story — replace with your own history.)</span>
+            Wudi Online was born out of a simple love for the saree — its
+            grace, its history, and the way it makes every woman who wears
+            it feel effortlessly beautiful.
           </p>
           <p>
-            What began as a small family venture in Sri Lanka has grown into
-            a destination for women who want their saree to say something —
-            about heritage, about occasion, and about themselves. We work
-            directly with weaving communities to ensure every purchase
-            supports fair, sustainable livelihoods.
+            What started as a small passion project has grown into a
+            trusted online destination for women across Sri Lanka looking
+            for quality sarees they can rely on. We handpick every piece in
+            our collection, from everyday cottons to statement bridal
+            silks, so that whatever the occasion, you'll find something
+            that feels like it was made for you.
+          </p>
+          <p>
+            Shopping with us is simple, personal, and built on trust — from
+            the moment you browse our collection to the moment your order
+            arrives at your doorstep.
           </p>
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {[
-            { title: "Authenticity", desc: "Every saree is sourced directly from verified artisan weavers." },
-            { title: "Quality", desc: "Hand-checked fabric, stitching, and finishing before it reaches you." },
-            { title: "Sustainability", desc: "Supporting traditional techniques and fair wages for our weavers." },
+            { title: "Quality First", desc: "Every saree is carefully checked for fabric, finish, and detail before it reaches you." },
+            { title: "Honest Pricing", desc: "Fair, transparent prices with no hidden costs — quality that doesn't break the bank." },
+            { title: "Customer Care", desc: "Real support from real people, from your first question to after your order arrives." },
           ].map((v) => (
             <div key={v.title} className="rounded-2xl bg-white p-7 text-center shadow-card">
               <h3 className="font-display text-lg text-burgundy">{v.title}</h3>
