@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container-elegant grid grid-cols-2 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-5">
         <div className="col-span-2 lg:col-span-2">
           <Link href="/" className="font-display text-2xl text-cream">
-            Sari <span className="text-gold">Elegance</span>
+            Wudi <span className="text-gold">Online</span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/60">
             Handwoven sarees crafted with heritage techniques, curated for the
@@ -15,8 +15,8 @@ export default function Footer() {
           </p>
           <div className="mt-5 flex gap-3">
             {["Instagram", "Facebook", "TikTok"].map((s) => (
-              <a
-                key={s}
+              
+                <a key={s}
                 href="#"
                 aria-label={s}
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-cream/20 text-xs transition-colors hover:border-gold hover:text-gold"
@@ -50,16 +50,16 @@ export default function Footer() {
         <div>
           <h3 className="font-display text-base text-cream">Contact</h3>
           <ul className="mt-4 space-y-2.5 text-sm text-cream/60">
-            <li>123 Galle Road, Colombo 03,<br />Sri Lanka <span className="text-cream/30">(placeholder)</span></li>
-            <li>+94 77 123 4567 <span className="text-cream/30">(placeholder)</span></li>
-            <li>hello@sarielegance.lk <span className="text-cream/30">(placeholder)</span></li>
+            <li>62/1, Hendimahara,<br />Minuwangoda</li>
+            <li>076 572 5157</li>
+            <li>kmsanjaya2004@gmail.com</li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-cream/10">
         <div className="container-elegant flex flex-col items-center justify-between gap-3 py-6 text-xs text-cream/50 sm:flex-row">
-          <p>© {new Date().getFullYear()} Sari Elegance. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Wudi Online. All rights reserved.</p>
           <div className="flex gap-5">
             <Link href="/privacy-policy" className="hover:text-gold">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-gold">Terms &amp; Conditions</Link>
