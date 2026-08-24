@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF7F0;
+  color: #2A2420;
+}
+
+::selection {
+  background-color: #B8892B;
+  color: #FBF7F0;
+}
+
+/* visible keyboard focus for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #B8892B;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.container-elegant {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-burgundy px-7 py-3 text-sm font-semibold tracking-wide text-cream transition-all duration-300 hover:bg-burgundy-light hover:shadow-gold active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-burgundy px-7 py-3 text-sm font-semibold tracking-wide text-burgundy transition-all duration-300 hover:bg-burgundy hover:text-cream active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-gold {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3 text-sm font-semibold tracking-wide text-charcoal transition-all duration-300 hover:bg-gold-dark hover:text-cream active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.eyebrow {
+  @apply font-body text-xs font-semibold uppercase tracking-[0.25em] text-gold-dark;
+}
+
+.section-heading {
+  @apply font-display text-3xl text-charcoal sm:text-4xl;
+}
+
+.input-elegant {
+  @apply w-full rounded-md border border-charcoal/15 bg-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/40 transition-colors focus:border-gold;
+}
+
+.skeleton {
+  @apply animate-shimmer rounded-md bg-[length:200%_100%];
+  background-image: linear-gradient(90deg, #EFE7D8 25%, #F7F1E6 37%, #EFE7D8 63%);
+}
